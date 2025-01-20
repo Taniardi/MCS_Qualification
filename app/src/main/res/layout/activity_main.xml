@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r1">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TITI STORE"
+                        android:textSize="25dp"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"/>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="TITI STORE"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textColor="@color/design_default_color_primary"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_centerVertical="true"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnStoreLocation"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:text="Store Location"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:background="@drawable/button_border"/>-->
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabLayout"
+        android:layout_below="@+id/r1"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/design_default_color_primary"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/white">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Product"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cart"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="History"/>
+    </com.google.android.material.tabs.TabLayout>
+
+</RelativeLayout>

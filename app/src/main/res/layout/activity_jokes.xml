@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.JokesActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thankyouu💖"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/lblSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="What's the difference between a guitar and a fish?"
+        android:layout_marginHorizontal="10dp"/>
+
+    <TextView
+        android:id="@+id/lblPunchline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="You can tune a guitar but you can't &quot;tuna&quot; fish!"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/inputPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="5dp"
+            android:padding="5dp"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:background="@drawable/border_shape"
+            android:layout_toStartOf="@+id/btnSendToFriend"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:id="@+id/btnSendToFriend"
+            android:text="SEND TO FRIEND"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/button_border"/>
+
+</LinearLayout>
